@@ -1,0 +1,4 @@
+.movie-detail{
+    display: flex;
+    justify-content: space-between;
+  }
