@@ -1,7 +1,7 @@
 const initialState = {
     searchResults: [],
     movieDetails: {},
-    allMovies: [], // Ajout de allMovies dans l'état initial
+    allMovies: [], 
     error: null,
   };
   
@@ -11,7 +11,7 @@ const initialState = {
         return {
           ...state,
           searchResults: action.payload,
-          error: null, // Réinitialisation de l'erreur après une recherche réussie
+          error: null,
         };
       case 'SEARCH_MOVIES_FAILURE':
         return {
@@ -22,7 +22,7 @@ const initialState = {
         return {
           ...state,
           movieDetails: action.payload,
-          error: null, // Réinitialisation de l'erreur après avoir obtenu les détails avec succès
+          error: null, 
         };
       case 'GET_MOVIE_DETAILS_FAILURE':
         return {
@@ -33,7 +33,7 @@ const initialState = {
         return {
           ...state,
           allMovies: action.payload,
-          error: null, // Réinitialisation de l'erreur après avoir récupéré tous les films avec succès
+          error: null, 
         };
       case 'FETCH_ALL_MOVIES_FAILURE':
         return {

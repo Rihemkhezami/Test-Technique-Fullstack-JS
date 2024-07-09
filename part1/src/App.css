@@ -28,7 +28,7 @@ h1 {
 
 body {
   font-family: var(--font-roboto);
-  background-color: #61777e;
+  background-color: white;
 }
 
 @media screen and (max-width: 600px) {

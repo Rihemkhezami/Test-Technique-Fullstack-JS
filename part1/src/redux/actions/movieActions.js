@@ -32,7 +32,7 @@ export const fetchAllMovies = () => async (dispatch) => {
   try {
     const response = await api.get('', {
       params: {
-        s: '*', // Requête pour obtenir tous les films
+        s: '*', 
       },
     });
     dispatch({ type: 'FETCH_ALL_MOVIES_SUCCESS', payload: response.data.Search });
